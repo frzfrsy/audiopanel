@@ -1,0 +1,785 @@
+local SAP = game.CoreGui:FindFirstChild("Skeppy's Audio Panel");
+
+if SAP then
+	SAP:Destroy()
+end
+
+local Converted = {
+	["_Skeppy's Audio Panel"] = Instance.new("ScreenGui");
+	["_Frame"] = Instance.new("Frame");
+	["_FilteringChecker"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint"] = Instance.new("UITextSizeConstraint");
+	["_UIPadding"] = Instance.new("UIPadding");
+	["_MuteGame"] = Instance.new("TextButton");
+	["_UICorner"] = Instance.new("UICorner");
+	["_UITextSizeConstraint1"] = Instance.new("UITextSizeConstraint");
+	["_AnnoyingSound"] = Instance.new("TextButton");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_UITextSizeConstraint2"] = Instance.new("UITextSizeConstraint");
+	["_KillSoundService"] = Instance.new("TextButton");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_UITextSizeConstraint3"] = Instance.new("UITextSizeConstraint");
+	["_TopBar"] = Instance.new("Frame");
+	["_Icon"] = Instance.new("ImageLabel");
+	["_Close"] = Instance.new("TextButton");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_UITextSizeConstraint4"] = Instance.new("UITextSizeConstraint");
+	["_Minimise"] = Instance.new("TextButton");
+	["_LocalScript1"] = Instance.new("LocalScript");
+	["_UITextSizeConstraint5"] = Instance.new("UITextSizeConstraint");
+	["_Title"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint6"] = Instance.new("UITextSizeConstraint");
+	["_StopTheProcess"] = Instance.new("TextButton");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_UITextSizeConstraint7"] = Instance.new("UITextSizeConstraint");
+	["_UnmuteGame"] = Instance.new("TextButton");
+	["_UICorner4"] = Instance.new("UICorner");
+	["_UITextSizeConstraint8"] = Instance.new("UITextSizeConstraint");
+	["_WaitSpeed"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint9"] = Instance.new("UITextSizeConstraint");
+	["_Source"] = Instance.new("TextBox");
+	["_UITextSizeConstraint10"] = Instance.new("UITextSizeConstraint");
+	["_DropShadowHolder"] = Instance.new("Frame");
+	["_DropShadow"] = Instance.new("ImageLabel");
+	["_PreferredGames"] = Instance.new("TextButton");
+	["_UICorner5"] = Instance.new("UICorner");
+	["_UITextSizeConstraint11"] = Instance.new("UITextSizeConstraint");
+	["_RestoreUp"] = Instance.new("ImageButton");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_LocalScript2"] = Instance.new("LocalScript");
+	["_IntroMain"] = Instance.new("LocalScript");
+	["_DragsFrame"] = Instance.new("LocalScript");
+	["_Functions"] = Instance.new("LocalScript");
+	["_Check"] = Instance.new("LocalScript");
+	["_SoundEvent"] = Instance.new("LocalScript");
+	["_Sw"] = Instance.new("Sound");
+	["_Games"] = Instance.new("ScrollingFrame");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["_hideAndSeekExtreme"] = Instance.new("TextButton");
+	["_Icon1"] = Instance.new("ImageLabel");
+	["_TextLabel"] = Instance.new("TextLabel");
+	["_UIPadding1"] = Instance.new("UIPadding");
+	["_UITextSizeConstraint12"] = Instance.new("UITextSizeConstraint");
+}
+
+Converted["_Skeppy's Audio Panel"].Name = "Skeppy's Audio Panel"
+
+Converted["_Frame"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_Frame"].BorderColor3 = Color3.fromRGB(27.000000290572643, 42.000001296401024, 53.00000064074993)
+Converted["_Frame"].BorderSizePixel = 0
+Converted["_Frame"].Position = UDim2.new(2, 0, 0.5, 0)
+Converted["_Frame"].Selectable = true
+Converted["_Frame"].Size = UDim2.new(0, 438, 0, 238)
+Converted["_Frame"].Parent = Converted["_Skeppy's Audio Panel"]
+
+Converted["_FilteringChecker"].Font = Enum.Font.SourceSans
+Converted["_FilteringChecker"].Text = "Checking the filter..."
+Converted["_FilteringChecker"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FilteringChecker"].TextScaled = true
+Converted["_FilteringChecker"].TextSize = 20
+Converted["_FilteringChecker"].TextWrapped = true
+Converted["_FilteringChecker"].TextXAlignment = Enum.TextXAlignment.Right
+Converted["_FilteringChecker"].AnchorPoint = Vector2.new(1, 1)
+Converted["_FilteringChecker"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FilteringChecker"].BackgroundTransparency = 1
+Converted["_FilteringChecker"].Position = UDim2.new(1, 0, 1, 0)
+Converted["_FilteringChecker"].Size = UDim2.new(0, 150, 0, 25)
+Converted["_FilteringChecker"].ZIndex = 2
+Converted["_FilteringChecker"].Name = "FilteringChecker"
+Converted["_FilteringChecker"].Parent = Converted["_Frame"]
+
+Converted["_UITextSizeConstraint"].MaxTextSize = 20
+Converted["_UITextSizeConstraint"].Parent = Converted["_FilteringChecker"]
+
+Converted["_UIPadding"].PaddingRight = UDim.new(0, 4)
+Converted["_UIPadding"].Parent = Converted["_FilteringChecker"]
+
+Converted["_MuteGame"].Font = Enum.Font.SourceSans
+Converted["_MuteGame"].Text = "Mute Game"
+Converted["_MuteGame"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_MuteGame"].TextSize = 20
+Converted["_MuteGame"].TextWrapped = true
+Converted["_MuteGame"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_MuteGame"].BorderSizePixel = 0
+Converted["_MuteGame"].Position = UDim2.new(0.015716901, 0, 0.337142825, 40)
+Converted["_MuteGame"].Size = UDim2.new(0, 208, 0, 33)
+Converted["_MuteGame"].ZIndex = 2
+Converted["_MuteGame"].Name = "MuteGame"
+Converted["_MuteGame"].Parent = Converted["_Frame"]
+
+Converted["_UICorner"].Parent = Converted["_MuteGame"]
+
+Converted["_UITextSizeConstraint1"].MaxTextSize = 20
+Converted["_UITextSizeConstraint1"].Parent = Converted["_MuteGame"]
+
+Converted["_AnnoyingSound"].Font = Enum.Font.SourceSans
+Converted["_AnnoyingSound"].Text = "Annoying  Sound"
+Converted["_AnnoyingSound"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AnnoyingSound"].TextSize = 20
+Converted["_AnnoyingSound"].TextWrapped = true
+Converted["_AnnoyingSound"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_AnnoyingSound"].BorderSizePixel = 0
+Converted["_AnnoyingSound"].Position = UDim2.new(0.01369863, 0, 0, 40)
+Converted["_AnnoyingSound"].Size = UDim2.new(0, 209, 0, 33)
+Converted["_AnnoyingSound"].ZIndex = 2
+Converted["_AnnoyingSound"].Name = "AnnoyingSound"
+Converted["_AnnoyingSound"].Parent = Converted["_Frame"]
+
+Converted["_UICorner1"].Parent = Converted["_AnnoyingSound"]
+
+Converted["_UITextSizeConstraint2"].MaxTextSize = 20
+Converted["_UITextSizeConstraint2"].Parent = Converted["_AnnoyingSound"]
+
+Converted["_KillSoundService"].Font = Enum.Font.SourceSans
+Converted["_KillSoundService"].Text = "Kill Sound Service"
+Converted["_KillSoundService"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_KillSoundService"].TextSize = 20
+Converted["_KillSoundService"].TextWrapped = true
+Converted["_KillSoundService"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_KillSoundService"].BorderSizePixel = 0
+Converted["_KillSoundService"].Position = UDim2.new(0.506849289, 0, 0, 40)
+Converted["_KillSoundService"].Size = UDim2.new(0, 209, 0, 33)
+Converted["_KillSoundService"].ZIndex = 2
+Converted["_KillSoundService"].Name = "KillSoundService"
+Converted["_KillSoundService"].Parent = Converted["_Frame"]
+
+Converted["_UICorner2"].Parent = Converted["_KillSoundService"]
+
+Converted["_UITextSizeConstraint3"].MaxTextSize = 20
+Converted["_UITextSizeConstraint3"].Parent = Converted["_KillSoundService"]
+
+Converted["_TopBar"].AnchorPoint = Vector2.new(0.5, 0)
+Converted["_TopBar"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_TopBar"].BorderColor3 = Color3.fromRGB(27.000000290572643, 42.000001296401024, 53.00000064074993)
+Converted["_TopBar"].BorderSizePixel = 0
+Converted["_TopBar"].Position = UDim2.new(0.5, 0, 0, 0)
+Converted["_TopBar"].Size = UDim2.new(0, 438, 0, 30)
+Converted["_TopBar"].Name = "TopBar"
+Converted["_TopBar"].Parent = Converted["_Frame"]
+
+Converted["_Icon"].Image = "http://www.roblox.com/asset/?id=6031471489"
+Converted["_Icon"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Icon"].BackgroundTransparency = 1
+Converted["_Icon"].Position = UDim2.new(0, 3, 0, 0)
+Converted["_Icon"].Size = UDim2.new(0, 30, 1, 0)
+Converted["_Icon"].Name = "Icon"
+Converted["_Icon"].Parent = Converted["_TopBar"]
+
+Converted["_Close"].Font = Enum.Font.Unknown
+Converted["_Close"].Text = "x"
+Converted["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close"].TextScaled = true
+Converted["_Close"].TextSize = 25
+Converted["_Close"].TextWrapped = true
+Converted["_Close"].AnchorPoint = Vector2.new(1, 0)
+Converted["_Close"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_Close"].BorderColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_Close"].BorderSizePixel = 0
+Converted["_Close"].Position = UDim2.new(1, 0, 0, 0)
+Converted["_Close"].Size = UDim2.new(0, 30, 1, 0)
+Converted["_Close"].Name = "Close"
+Converted["_Close"].Parent = Converted["_TopBar"]
+
+Converted["_UITextSizeConstraint4"].MaxTextSize = 25
+Converted["_UITextSizeConstraint4"].Parent = Converted["_Close"]
+
+Converted["_Minimise"].Font = Enum.Font.Unknown
+Converted["_Minimise"].Text = "_"
+Converted["_Minimise"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Minimise"].TextScaled = true
+Converted["_Minimise"].TextSize = 25
+Converted["_Minimise"].TextWrapped = true
+Converted["_Minimise"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_Minimise"].BorderColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_Minimise"].BorderSizePixel = 0
+Converted["_Minimise"].Position = UDim2.new(1, -60, 0, 0)
+Converted["_Minimise"].Size = UDim2.new(0, 30, 1, 0)
+Converted["_Minimise"].Name = "Minimise"
+Converted["_Minimise"].Parent = Converted["_TopBar"]
+
+Converted["_UITextSizeConstraint5"].MaxTextSize = 25
+Converted["_UITextSizeConstraint5"].Parent = Converted["_Minimise"]
+
+Converted["_Title"].Font = Enum.Font.Unknown
+Converted["_Title"].Text = "Skeppy's Audio Panel"
+Converted["_Title"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].TextScaled = true
+Converted["_Title"].TextSize = 20
+Converted["_Title"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].TextWrapped = true
+Converted["_Title"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].BackgroundTransparency = 1
+Converted["_Title"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Title"].Size = UDim2.new(0, 200, 0, 30)
+Converted["_Title"].Name = "Title"
+Converted["_Title"].Parent = Converted["_TopBar"]
+
+Converted["_UITextSizeConstraint6"].MaxTextSize = 20
+Converted["_UITextSizeConstraint6"].Parent = Converted["_Title"]
+
+Converted["_StopTheProcess"].Font = Enum.Font.SourceSans
+Converted["_StopTheProcess"].Text = "Stop The Process"
+Converted["_StopTheProcess"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_StopTheProcess"].TextSize = 20
+Converted["_StopTheProcess"].TextWrapped = true
+Converted["_StopTheProcess"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_StopTheProcess"].BorderSizePixel = 0
+Converted["_StopTheProcess"].Position = UDim2.new(0.0159817357, 0, 0.168067232, 40)
+Converted["_StopTheProcess"].Size = UDim2.new(0, 424, 0, 33)
+Converted["_StopTheProcess"].ZIndex = 2
+Converted["_StopTheProcess"].Name = "StopTheProcess"
+Converted["_StopTheProcess"].Parent = Converted["_Frame"]
+
+Converted["_UICorner3"].Parent = Converted["_StopTheProcess"]
+
+Converted["_UITextSizeConstraint7"].MaxTextSize = 20
+Converted["_UITextSizeConstraint7"].Parent = Converted["_StopTheProcess"]
+
+Converted["_UnmuteGame"].Font = Enum.Font.SourceSans
+Converted["_UnmuteGame"].Text = "Unmute Game"
+Converted["_UnmuteGame"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UnmuteGame"].TextScaled = true
+Converted["_UnmuteGame"].TextSize = 20
+Converted["_UnmuteGame"].TextWrapped = true
+Converted["_UnmuteGame"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_UnmuteGame"].BorderSizePixel = 0
+Converted["_UnmuteGame"].Position = UDim2.new(0.506849289, 0, 0.336134464, 40)
+Converted["_UnmuteGame"].Size = UDim2.new(0, 209, 0, 33)
+Converted["_UnmuteGame"].ZIndex = 2
+Converted["_UnmuteGame"].Name = "UnmuteGame"
+Converted["_UnmuteGame"].Parent = Converted["_Frame"]
+
+Converted["_UICorner4"].Parent = Converted["_UnmuteGame"]
+
+Converted["_UITextSizeConstraint8"].MaxTextSize = 20
+Converted["_UITextSizeConstraint8"].Parent = Converted["_UnmuteGame"]
+
+Converted["_WaitSpeed"].Font = Enum.Font.SourceSans
+Converted["_WaitSpeed"].Text = "Wait Speed:"
+Converted["_WaitSpeed"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WaitSpeed"].TextScaled = true
+Converted["_WaitSpeed"].TextSize = 20
+Converted["_WaitSpeed"].TextWrapped = true
+Converted["_WaitSpeed"].AnchorPoint = Vector2.new(0, 1)
+Converted["_WaitSpeed"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WaitSpeed"].BackgroundTransparency = 1
+Converted["_WaitSpeed"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WaitSpeed"].BorderSizePixel = 0
+Converted["_WaitSpeed"].Position = UDim2.new(0, 0, 1, 0)
+Converted["_WaitSpeed"].Size = UDim2.new(0, 90, 0, 25)
+Converted["_WaitSpeed"].ZIndex = 2
+Converted["_WaitSpeed"].Name = "WaitSpeed"
+Converted["_WaitSpeed"].Parent = Converted["_Frame"]
+
+Converted["_UITextSizeConstraint9"].MaxTextSize = 20
+Converted["_UITextSizeConstraint9"].Parent = Converted["_WaitSpeed"]
+
+Converted["_Source"].ClearTextOnFocus = false
+Converted["_Source"].Font = Enum.Font.SourceSans
+Converted["_Source"].Text = "0.5"
+Converted["_Source"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Source"].TextScaled = true
+Converted["_Source"].TextSize = 20
+Converted["_Source"].TextWrapped = true
+Converted["_Source"].AnchorPoint = Vector2.new(0, 0.5)
+Converted["_Source"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Source"].BackgroundTransparency = 1
+Converted["_Source"].Position = UDim2.new(1, 0, 0.5, 0)
+Converted["_Source"].SelectionOrder = 1
+Converted["_Source"].Size = UDim2.new(0, 25, 0, 25)
+Converted["_Source"].ZIndex = 2
+Converted["_Source"].Name = "Source"
+Converted["_Source"].Parent = Converted["_WaitSpeed"]
+
+Converted["_UITextSizeConstraint10"].MaxTextSize = 20
+Converted["_UITextSizeConstraint10"].Parent = Converted["_Source"]
+
+Converted["_DropShadowHolder"].BackgroundTransparency = 1
+Converted["_DropShadowHolder"].BorderSizePixel = 0
+Converted["_DropShadowHolder"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_DropShadowHolder"].ZIndex = 0
+Converted["_DropShadowHolder"].Name = "DropShadowHolder"
+Converted["_DropShadowHolder"].Parent = Converted["_Frame"]
+
+Converted["_DropShadow"].Image = "rbxassetid://6015897843"
+Converted["_DropShadow"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DropShadow"].ImageTransparency = 0.5
+Converted["_DropShadow"].ScaleType = Enum.ScaleType.Slice
+Converted["_DropShadow"].SliceCenter = Rect.new(49, 49, 450, 450)
+Converted["_DropShadow"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_DropShadow"].BackgroundTransparency = 1
+Converted["_DropShadow"].BorderSizePixel = 0
+Converted["_DropShadow"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_DropShadow"].Size = UDim2.new(1, 47, 1, 47)
+Converted["_DropShadow"].ZIndex = 0
+Converted["_DropShadow"].Name = "DropShadow"
+Converted["_DropShadow"].Parent = Converted["_DropShadowHolder"]
+
+Converted["_PreferredGames"].Font = Enum.Font.SourceSans
+Converted["_PreferredGames"].Text = "Games"
+Converted["_PreferredGames"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_PreferredGames"].TextScaled = true
+Converted["_PreferredGames"].TextSize = 20
+Converted["_PreferredGames"].TextWrapped = true
+Converted["_PreferredGames"].AnchorPoint = Vector2.new(0.5, 1)
+Converted["_PreferredGames"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_PreferredGames"].BorderSizePixel = 0
+Converted["_PreferredGames"].Position = UDim2.new(0.5, 0, 1, -10)
+Converted["_PreferredGames"].Size = UDim2.new(0, 74, 0, 23)
+Converted["_PreferredGames"].ZIndex = 2
+Converted["_PreferredGames"].Name = "PreferredGames"
+Converted["_PreferredGames"].Parent = Converted["_Frame"]
+
+Converted["_UICorner5"].Parent = Converted["_PreferredGames"]
+
+Converted["_UITextSizeConstraint11"].MaxTextSize = 20
+Converted["_UITextSizeConstraint11"].Parent = Converted["_PreferredGames"]
+
+Converted["_RestoreUp"].Image = "http://www.roblox.com/asset/?id=6031471489"
+Converted["_RestoreUp"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_RestoreUp"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_RestoreUp"].BorderSizePixel = 0
+Converted["_RestoreUp"].Position = UDim2.new(0, 16, 0, 16)
+Converted["_RestoreUp"].Size = UDim2.new(0, 32, 0, 32)
+Converted["_RestoreUp"].Visible = false
+Converted["_RestoreUp"].Name = "RestoreUp"
+Converted["_RestoreUp"].Parent = Converted["_Skeppy's Audio Panel"]
+
+Converted["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke"].Color = Color3.fromRGB(41.00000135600567, 60.00000402331352, 157.0000058412552)
+Converted["_UIStroke"].Thickness = 3
+Converted["_UIStroke"].Parent = Converted["_RestoreUp"]
+
+Converted["_Sw"].SoundId = "rbxassetid://9119713951"
+Converted["_Sw"].Volume = 1
+Converted["_Sw"].Name = "Sw"
+Converted["_Sw"].Parent = Converted["_Skeppy's Audio Panel"]
+
+Converted["_Games"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_Games"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Games"].ScrollBarThickness = 6
+Converted["_Games"].ScrollingDirection = Enum.ScrollingDirection.Y
+Converted["_Games"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Games"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_Games"].BackgroundTransparency = 0.699999988079071
+Converted["_Games"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Games"].BorderSizePixel = 0
+Converted["_Games"].ClipsDescendants = false
+Converted["_Games"].Position = UDim2.new(0.5, 0, 2, 0)
+Converted["_Games"].Selectable = false
+Converted["_Games"].Size = UDim2.new(0, 200, 0, 250)
+Converted["_Games"].Name = "Games"
+Converted["_Games"].Parent = Converted["_Skeppy's Audio Panel"]
+
+Converted["_UIStroke1"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke1"].Color = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_UIStroke1"].Parent = Converted["_Games"]
+
+Converted["_UIListLayout"].Parent = Converted["_Games"]
+
+Converted["_hideAndSeekExtreme"].Font = Enum.Font.SourceSans
+Converted["_hideAndSeekExtreme"].Text = ""
+Converted["_hideAndSeekExtreme"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_hideAndSeekExtreme"].TextSize = 14
+Converted["_hideAndSeekExtreme"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_hideAndSeekExtreme"].BackgroundTransparency = 0.699999988079071
+Converted["_hideAndSeekExtreme"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_hideAndSeekExtreme"].BorderSizePixel = 0
+Converted["_hideAndSeekExtreme"].Size = UDim2.new(1, 0, 0, 30)
+Converted["_hideAndSeekExtreme"].Name = "hideAndSeekExtreme"
+Converted["_hideAndSeekExtreme"].Parent = Converted["_Games"]
+
+Converted["_Icon1"].Image = "rbxassetid://16848762653"
+Converted["_Icon1"].AnchorPoint = Vector2.new(0, 0.5)
+Converted["_Icon1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Icon1"].BackgroundTransparency = 1
+Converted["_Icon1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Icon1"].BorderSizePixel = 0
+Converted["_Icon1"].Position = UDim2.new(0, 0, 0.5, 0)
+Converted["_Icon1"].Size = UDim2.new(0, 30, 1, 0)
+Converted["_Icon1"].Name = "Icon"
+Converted["_Icon1"].Parent = Converted["_hideAndSeekExtreme"]
+
+Converted["_TextLabel"].Font = Enum.Font.SourceSans
+Converted["_TextLabel"].Text = "Hide and Seek Extreme"
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].TextScaled = true
+Converted["_TextLabel"].TextSize = 15
+Converted["_TextLabel"].TextWrapped = true
+Converted["_TextLabel"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_TextLabel"].AnchorPoint = Vector2.new(0, 0.5)
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].BackgroundTransparency = 1
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Position = UDim2.new(0, 30, 0.5, 0)
+Converted["_TextLabel"].Size = UDim2.new(0, 170, 1, 0)
+Converted["_TextLabel"].Parent = Converted["_hideAndSeekExtreme"]
+
+Converted["_UIPadding1"].PaddingLeft = UDim.new(0, 6)
+Converted["_UIPadding1"].Parent = Converted["_TextLabel"]
+
+Converted["_UITextSizeConstraint12"].MaxTextSize = 15
+Converted["_UITextSizeConstraint12"].Parent = Converted["_TextLabel"]
+
+Converted["_Skeppy's Audio Panel"].Parent = game.CoreGui
+
+local fake_module_scripts = {}
+
+local function QOUA_fake_script() -- Fake Script: Workspace.Skeppy's Audio Panel.Frame.TopBar.Close.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Close"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:TweenPosition(
+			UDim2.new(-2, 0, 0.5, 0),
+			Enum.EasingDirection.Out,
+			Enum.EasingStyle.Quint,
+			.901
+		)
+		
+		wait(.901)
+		
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+local function KDRO_fake_script() -- Fake Script: Workspace.Skeppy's Audio Panel.Frame.TopBar.Minimise.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Minimise"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.RestoreUp.Visible = true
+		script.Parent.Parent.Parent.Visible = false
+	end)
+end
+local function PWXEXB_fake_script() -- Fake Script: Workspace.Skeppy's Audio Panel.RestoreUp.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_RestoreUp"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+local function BRZO_fake_script() -- Fake Script: Workspace.Skeppy's Audio Panel.IntroMain
+    local script = Instance.new("LocalScript")
+    script.Name = "IntroMain"
+    script.Parent = Converted["_Skeppy's Audio Panel"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	function randomString()
+		local length = math.random(10,20)
+		local array = {}
+		for i = 1, length do
+			array[i] = string.char(math.random(32, 126))
+		end
+		return table.concat(array)
+	end
+	
+	local kk = script.Parent.Frame
+	
+	local notification = Instance.new("Sound")
+	notification.Parent = game:GetService("SoundService")
+	notification.SoundId = "rbxassetid://7647207390"
+	notification.Volume = .5
+	notification.Name = randomString()
+	
+	notification:Play()
+	
+	kk:TweenPosition(
+		UDim2.new(0.5, 0, 0.5, 0),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		0.324
+	)
+end
+local function LWNS_fake_script() -- Fake Script: Workspace.Skeppy's Audio Panel.DragsFrame
+    local script = Instance.new("LocalScript")
+    script.Name = "DragsFrame"
+    script.Parent = Converted["_Skeppy's Audio Panel"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = .25
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+	
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(.25), {Position = Position}):Play()
+		end
+	
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if (input.UserInputState == Enum.UserInputState.End) then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+	
+		Frame.InputChanged:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+				dragInput = input
+			end
+		end)
+	
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if (input == dragInput and dragToggle) then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent.Frame)
+end
+local function CEOKX_fake_script() -- Fake Script: Workspace.Skeppy's Audio Panel.Functions
+    local script = Instance.new("LocalScript")
+    script.Name = "Functions"
+    script.Parent = Converted["_Skeppy's Audio Panel"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local frame = script.Parent.Frame
+	local IY = frame.UnmuteGame
+	local _1E = frame.MuteGame
+	local _3E = frame.AnnoyingSound
+	local SE = frame.KillSoundService
+	local Stop = frame.StopTheProcess
+	local PreGam = frame.PreferredGames
+	local Games = frame.Parent.Games
+	local Hns = Games.hideAndSeekExtreme
+	
+	--//------------------------------------------------------------\\--
+	local Mute = false
+	local Active = true
+	
+	IY.MouseButton1Click:Connect(function()
+		Mute = false
+	end)
+	
+	_1E.MouseButton1Click:Connect(function()
+		Mute = true
+		while Mute == true do 
+			wait()
+			for _, sound in next, game:GetDescendants() do
+				if sound:IsA("Sound") then
+					sound:Stop()
+				end
+			end
+		end
+	end)
+	
+	_3E.MouseButton1Click:Connect(function()
+		for _, sound in next, game:GetDescendants() do
+			if sound:IsA("Sound") then
+				sound:Play()
+			end
+		end
+	end)
+	
+	SE.MouseButton1Click:Connect(function()
+		Active = true
+		while Active == true do
+			local StringValue = frame.WaitSpeed.Source.Text
+			wait(StringValue)
+			for _, sound in next, game:GetDescendants() do
+				if sound:IsA("Sound") then
+					sound:Play()
+				end
+			end
+		end
+	end)
+	
+	Stop.MouseButton1Click:Connect(function()
+		Active = false
+	end)
+	
+	PreGam.MouseButton1Click:Connect(function()
+		frame:TweenPosition(
+			UDim2.new(0.5, 0, -2, 0),
+			Enum.EasingDirection.Out,
+			Enum.EasingStyle.Quint,
+			0.901
+		)
+		
+		Games:TweenPosition(
+			UDim2.new(0.5, 0, 0.5, 0),
+			Enum.EasingDirection.Out,
+			Enum.EasingStyle.Quint,
+			0.901
+		)
+		
+		task.wait(5)
+		
+		frame:TweenPosition(
+			UDim2.new(0.5, 0, 0.5, 0),
+			Enum.EasingDirection.Out,
+			Enum.EasingStyle.Quint,
+			0.901
+		)
+	
+		Games:TweenPosition(
+			UDim2.new(0.5, 0, 2, 0),
+			Enum.EasingDirection.Out,
+			Enum.EasingStyle.Quint,
+			0.901
+		)
+	end)
+	
+	Hns.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://gist.githubusercontent.com/frzfrsy/ef671aa9730061171cfc3ea44b19b2d9/raw"))()
+	end)
+	
+	
+end
+local function JPIWOP_fake_script() -- Fake Script: Workspace.Skeppy's Audio Panel.Check
+    local script = Instance.new("LocalScript")
+    script.Name = "Check"
+    script.Parent = Converted["_Skeppy's Audio Panel"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local frame = script.Parent.Frame
+	local Time = frame.FilteringChecker
+	
+	function randomString()
+		local length = math.random(10,20)
+		local array = {}
+		for i = 1, length do
+			array[i] = string.char(math.random(32, 126))
+		end
+		return table.concat(array)
+	end
+	
+	local function fail()
+		local notification = Instance.new("Sound")
+		
+		notification.Parent = game:GetService("SoundService")
+		notification.SoundId = "rbxassetid://1272001139"
+		notification.Volume = .5
+		notification.Name = randomString()
+		
+		return notification
+	end
+	
+	local function success()
+		local notification = Instance.new("Sound")
+	
+		notification.Parent = game:GetService("SoundService")
+		notification.SoundId = "rbxassetid://1272002162"
+		notification.Volume = .5
+		notification.Name = randomString()
+	
+		return notification
+	end
+	
+	do
+		task.wait(math.random() * 5)
+		local setting = game:GetService("SoundService").RespectFilteringEnabled
+		if setting == true then
+			Time.TextColor3 = Color3.fromRGB(38, 255, 156)
+			Time.Text = "Client-Sided"
+			fail():Play()
+		elseif setting == false then
+			Time.Text = "Server-Sided"
+			Time.TextColor3 = Color3.fromRGB(43, 177, 255)
+			success():Play()
+		end
+	end
+end
+local function AQRAV_fake_script() -- Fake Script: Workspace.Skeppy's Audio Panel.SoundEvent
+    local script = Instance.new("LocalScript")
+    script.Name = "SoundEvent"
+    script.Parent = Converted["_Skeppy's Audio Panel"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ss = script.Parent
+	
+	for _, H in pairs(ss:GetDescendants()) do
+		if H:IsA("TextButton") or H:IsA("ImageButton") and H then
+			H.MouseButton1Click:Connect(function()
+				ss.Sw:Play()
+			end)
+		end
+	end
+end
+
+coroutine.wrap(QOUA_fake_script)()
+coroutine.wrap(KDRO_fake_script)()
+coroutine.wrap(PWXEXB_fake_script)()
+coroutine.wrap(BRZO_fake_script)()
+coroutine.wrap(LWNS_fake_script)()
+coroutine.wrap(CEOKX_fake_script)()
+coroutine.wrap(JPIWOP_fake_script)()
+coroutine.wrap(AQRAV_fake_script)()
